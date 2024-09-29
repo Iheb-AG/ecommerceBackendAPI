@@ -1,7 +1,3 @@
-Here’s a template for a GitHub README file for an e-commerce backend built with Node.js and MongoDB:
-
----
-
 # 🛒 E-Commerce Backend
 
 This is a Node.js and MongoDB-based backend for an e-commerce application. It includes key features such as user authentication, product management, order processing, and more.
