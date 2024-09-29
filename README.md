@@ -32,8 +32,6 @@ This is a Node.js and MongoDB-based backend for an e-commerce application. It in
 
 ## 📁 Data Structures
 
-## Data Structures
-
 ### User
 | **Field**       | **Type**  |
 |-----------------|-----------|
