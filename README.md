@@ -2,6 +2,27 @@
 
 This is a Node.js and MongoDB-based backend for an e-commerce application. It includes key features such as user authentication, product management, order processing, and more.
 
+### 1. conception 
+
+### 📝 Product Backlog
+
+| **ID** | **Feature**                  | **Epic**                  | **Priority** | **User Story**                                                                                                                                      |
+|-------|------------------------------|---------------------------|--------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1     | Product Management            | Product and Categories    | High         | As an admin, I want to add, edit, and delete products so that I can manage the store’s inventory effectively.                                        |
+| 2     | Category Management           | Product and Categories    | High         | As an admin, I want to create, update, and delete product categories so that users can browse products by category.                                  |
+| 3     | Order Management              | Orders                    | High         | As a user, I want to place an order, view my order history, and track my order status so that I know when my order will arrive.                      |
+| 4     | Order Item Management         | Orders                    | High         | As a user, I want to add items to my order, change the quantity, or remove items before I complete my purchase so that I can adjust my cart easily.  |
+| 5     | User Registration             | User Management           | Medium       | As a new user, I want to register by providing my email and password so that I can create an account on the platform.                                |
+| 6     | User Login                    | User Management           | Medium       | As a registered user, I want to log in with my email and password so that I can access my account.                                                   |
+| 7     | User Role Management          | User Management           | Medium       | As an admin, I want to assign roles (admin, user) so that I can control who can manage the products and orders.                                      |
+| 8     | User Authentication with JWT  | User Management           | Medium       | As a user, I want to be authenticated using a secure token (JWT) so that my session remains active after login without re-entering credentials.      |
+
+### General Use-case diagram
+
+
+### General Class diagram
+
+
 ## 📁 Data Structures
 
 ### 1. **User**
