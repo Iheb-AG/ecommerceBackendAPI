@@ -4,7 +4,7 @@ This is a Node.js and MongoDB-based backend for an e-commerce application. It in
 
 ### 1. conception 
 
-### 📝 Product Backlog
+### 📝 1.1 Product Backlog
 
 | **ID** | **Feature**                  | **Epic**                  | **Priority** | **User Story**                                                                                                                                      |
 |-------|------------------------------|---------------------------|--------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -17,85 +17,74 @@ This is a Node.js and MongoDB-based backend for an e-commerce application. It in
 | 7     | User Role Management          | User Management           | Medium       | As an admin, I want to assign roles (admin, user) so that I can control who can manage the products and orders.                                      |
 | 8     | User Authentication with JWT  | User Management           | Medium       | As a user, I want to be authenticated using a secure token (JWT) so that my session remains active after login without re-entering credentials.      |
 
-### General Use-case diagram
+### 📝 1.2 General Use-case diagram
+![codex_test_UseCaseDiagram drawio](https://github.com/user-attachments/assets/7bd376ae-b506-42ee-a07b-daf84aab2bf0)
 
 
-### General Class diagram
+### 📝 1.3 General Class diagram
+![ClassDIagram drawio (2)](https://github.com/user-attachments/assets/ed31f74a-062c-437c-af00-f78feda9b367)
 
 
 ## 📁 Data Structures
 
-### 1. **User**
-   ```json
-   {
-     "_id": "ObjectId",
-     "name": "String",
-     "email": "String",
-     "passwordHash": "String",
-     "isAdmin": "Boolean",
-     "dateCreated": "Date"
-   }
-   ```
+## Data Structures
 
-### 2. **Product**
-   ```json
-   {
-     "_id": "ObjectId",
-     "name": "String",
-     "description": "String",
-     "image": "String",
-     "brand": "String",
-     "price": "Number",
-     "category": "ObjectId",
-     "countInStock": "Number",
-     "rating": "Number",
-     "numReviews": "Number",
-     "dateCreated": "Date"
-   }
-   ```
+### User
+| **Field**       | **Type**  |
+|-----------------|-----------|
+| id              | String    |
+| name            | String    |
+| email           | String    |
+| password        | String    |
+| phone           | String    |
+| isAdmin         | Boolean   |
+| street          | String    |
+| address         | String    |
+| zip             | String    |
+| city            | String    |
+| country         | String    |
 
-### 3. **Order**
-   ```json
-   {
-     "_id": "ObjectId",
-     "orderItems": [
-       {
-         "product": "ObjectId",
-         "quantity": "Number",
-         "price": "Number"
-       }
-     ],
-     "shippingAddress": "String",
-     "city": "String",
-     "zip": "String",
-     "country": "String",
-     "phone": "String",
-     "status": "String",
-     "totalPrice": "Number",
-     "user": "ObjectId",
-     "dateOrdered": "Date"
-   }
-   ```
+### Order
+| **Field**       | **Type**                 |
+|-----------------|--------------------------|
+| id              | String                   |
+| orderItems      | Array of `OrderItem` IDs |
+| shippingAddress | String                   |
+| city            | String                   |
+| zip             | String                   |
+| country         | String                   |
+| phone           | String                   |
+| status          | String                   |
+| totalPrice      | Number                   |
+| user            | String (User ID)         |
+| dateOrdered     | Date                     |
 
-### 4. **Category**
-   ```json
-   {
-     "_id": "ObjectId",
-     "name": "String",
-     "icon": "String",
-     "color": "String"
-   }
-   ```
+### Product
+| **Field**       | **Type**      |
+|-----------------|---------------|
+| id              | String        |
+| name            | String        |
+| description     | String        |
+| image           | String (URL)  |
+| brand           | String        |
+| price           | Number        |
+| countInStock    | Number        |
+| category        | String (Category ID) |
+| rating          | Number        |
 
-### 5. **OrderItem**
-   ```json
-   {
-     "_id": "ObjectId",
-     "product": "ObjectId",
-     "quantity": "Number",
-     "price": "Number"
-   }
-   ```
+### Category
+| **Field**       | **Type**      |
+|-----------------|---------------|
+| id              | String        |
+| name            | String        |
+
+### OrderItem
+| **Field**       | **Type**      |
+|-----------------|---------------|
+| id              | String        |
+| quantity        | Number        |
+| product         | String (Product ID) |
+
 
 ---
 
