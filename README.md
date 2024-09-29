@@ -2,6 +2,11 @@
 
 This is a Node.js and MongoDB-based backend for an e-commerce application. It includes key features such as user authentication, product management, order processing, and more.
 
+## Notes : 
+   - i'm totally aware that sharing .env file isn't recommended at all at any cicumstances.
+   - the provided account is totally isolated and doesn't belong to any other personal account, i made it specifically for this test.
+
+
 ### 1. conception 
 
 ### 📝 1.1 Product Backlog
